@@ -1,0 +1,95 @@
+graph TB
+    subgraph TRIGGER["⏰ Trigger"]
+        A["Monday 6:00 AM PT<br/>GitHub Actions Cron<br/>OR Manual Button Click"]
+    end
+
+    subgraph SCRAPING["🕷️ Data Collection Layer (per competitor × 7 brands)"]
+        direction TB
+        B1["🎯 Homepage Scraper<br/>Cloudscraper → H1/H2/H3 + Meta"]
+        B2["💰 Pricing Engine<br/>Shopify JSON API → Fallback HTML Scrape"]
+        B3["📰 News Scanner<br/>Google News RSS Feed"]
+        B4["🏅 Partnership Detector<br/>Google News RSS (filtered query)"]
+        B5["⭐ Sentiment Analyzer<br/>Trustpilot Score + Reviews"]
+        B6["🗣️ Reddit Monitor<br/>Public JSON API → Comments"]
+        B7["🛒 Amazon Intel<br/>Cloudscraper → Listings + Reviews"]
+        B8["🔬 Clinical Trials<br/>ClinicalTrials.gov REST API"]
+        B9["⚠️ FDA Watch<br/>openFDA Enforcement API"]
+        B10["📱 Social Scanner<br/>Homepage Link Parsing"]
+    end
+
+    subgraph COMPETITORS["🏢 Competitors Monitored"]
+        C1["Precision Fuel & Hydration"]
+        C2["Raw Nutrition"]
+        C3["Orgain"]
+        C4["Maurten"]
+        C5["GU Energy Labs"]
+        C6["Pillar Performance"]
+        C7["SwissRX"]
+    end
+
+    subgraph PROCESSING["⚙️ Processing Layer"]
+        D1["📊 Dynamic Score Calculator<br/>Converts raw data → 1-10 scores<br/>5 dimensions per brand"]
+        D2["📝 Raw Intel Aggregator<br/>Concatenates all scraped data<br/>into structured text feed"]
+    end
+
+    subgraph SCORING["📈 Scoring Dimensions"]
+        direction LR
+        S1["🔥 Brand Momentum<br/>News count + Partners<br/>+ Reddit upvotes"]
+        S2["💰 Price Competitive<br/>Avg product price<br/>from Shopify/HTML"]
+        S3["🔬 Science Credibility<br/>Clinical trials found<br/>+ FDA clean status"]
+        S4["🛒 Distribution Reach<br/>Amazon listings<br/>+ Shopify + Social"]
+        S5["😊 Satisfaction<br/>Trustpilot score<br/>+ Reddit sentiment"]
+    end
+
+    subgraph AI["🤖 AI Analysis Layer"]
+        E1["OpenAI GPT-4o<br/>4096 max tokens"]
+        E2["1,500+ Word Newsletter<br/>AlphaSignal-style format"]
+    end
+
+    subgraph NEWSLETTER["📧 Newsletter Sections"]
+        direction TB
+        N1["TL;DR Summary"]
+        N2["🚨 Top Threat"]
+        N3["💰 Pricing Landscape"]
+        N4["📰 News & Athletes"]
+        N5["🔬 Science & Regulatory"]
+        N6["🛒 Distribution & Amazon"]
+        N7["😊 Customer Sentiment"]
+        N8["⚡ Weekly Action Items"]
+        N9["📊 Competitive Scorecard"]
+    end
+
+    subgraph VISUALIZATION["📊 Visualization Layer"]
+        F1["Plotly Radar Chart<br/>All brands overlaid"]
+        F2["Plotly Bubble Chart<br/>Science vs Distribution"]
+        F3["Logo Cards<br/>Bar score breakdown"]
+    end
+
+    subgraph DELIVERY["📬 Delivery Layer"]
+        G1["Streamlit Dashboard<br/>Interactive UI"]
+        G2["Gmail SMTP<br/>Styled HTML Email<br/>+ Embedded Chart PNG"]
+        G3["JSON File<br/>data/last_scan.json"]
+    end
+
+    A --> B1 & B2 & B3 & B4 & B5 & B6 & B7 & B8 & B9 & B10
+    C1 & C2 & C3 & C4 & C5 & C6 & C7 -.-> B1
+    B1 & B2 & B3 & B4 & B5 & B6 & B7 & B8 & B9 & B10 --> D1 & D2
+    D1 --> S1 & S2 & S3 & S4 & S5
+    D2 --> E1
+    S1 & S2 & S3 & S4 & S5 --> F1 & F2 & F3
+    E1 --> E2
+    E2 --> N1 & N2 & N3 & N4 & N5 & N6 & N7 & N8 & N9
+    E2 --> G1 & G2
+    F1 & F2 & F3 --> G1
+    F1 --> G2
+    D2 --> G3
+
+    style TRIGGER fill:#1a1a2e,stroke:#00d4aa,color:#fff
+    style SCRAPING fill:#0d1117,stroke:#388bfd,color:#c9d1d9
+    style COMPETITORS fill:#161b22,stroke:#6e7681,color:#c9d1d9
+    style PROCESSING fill:#0d1117,stroke:#d29922,color:#c9d1d9
+    style SCORING fill:#161b22,stroke:#00d4aa,color:#c9d1d9
+    style AI fill:#0d1117,stroke:#f85149,color:#c9d1d9
+    style NEWSLETTER fill:#161b22,stroke:#58a6ff,color:#c9d1d9
+    style VISUALIZATION fill:#0d1117,stroke:#6c63ff,color:#c9d1d9
+    style DELIVERY fill:#161b22,stroke:#3fb950,color:#c9d1d9
