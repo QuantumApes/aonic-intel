@@ -1,0 +1,9 @@
+streamlit
+openai
+cloudscraper
+beautifulsoup4
+requests
+python-dotenv
+lxml
+plotly
+kaleido
