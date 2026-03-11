@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#dbeafe"/>
+      <stop offset="100%" style="stop-color:#bfdbfe"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d1fae5"/>
+      <stop offset="100%" style="stop-color:#a7f3d0"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7"/>
+      <stop offset="100%" style="stop-color:#fde68a"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fce4ec"/>
+      <stop offset="100%" style="stop-color:#f8bbd0"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ede9fe"/>
+      <stop offset="100%" style="stop-color:#ddd6fe"/>
+    </linearGradient>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="1100" fill="#f8fafc" rx="0"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="900" height="70" fill="url(#headerGrad)"/>
+  <text x="30" y="38" fill="#fff" font-size="20" font-weight="700">🦅 Aonic Competitive Intelligence Pipeline</text>
+  <text x="30" y="56" fill="rgba(255,255,255,0.5)" font-size="12">System Architecture · Weekly Automated Scan</text>
+
+  <!-- STEP 1: Trigger -->
+  <rect x="310" y="90" width="280" height="50" rx="25" fill="url(#headerGrad)" filter="url(#shadow)"/>
+  <text x="450" y="112" fill="#00d4aa" font-size="11" font-weight="700" text-anchor="middle">⏰ TRIGGER</text>
+  <text x="450" y="127" fill="#fff" font-size="10" text-anchor="middle">Monday 6:00 AM PT · GitHub Actions or Manual</text>
+
+  <!-- Arrow 1 -->
+  <line x1="450" y1="140" x2="450" y2="165" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <defs><marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#94a3b8"/></marker></defs>
+
+  <!-- STEP 2: Competitors -->
+  <rect x="30" y="170" width="840" height="55" rx="10" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+  <text x="50" y="193" fill="#475569" font-size="11" font-weight="700">🏢 7 COMPETITORS</text>
+  <text x="50" y="213" fill="#64748b" font-size="10">Precision F&amp;H · Raw Nutrition · Orgain · Maurten · GU Energy · Pillar Performance · SwissRX</text>
+
+  <!-- Arrow 2 -->
+  <line x1="450" y1="225" x2="450" y2="250" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- STEP 3: Data Collection -->
+  <rect x="30" y="255" width="840" height="220" rx="12" fill="url(#blueGrad)" stroke="#93c5fd" stroke-width="1" filter="url(#shadow)"/>
+  <text x="50" y="280" fill="#1e40af" font-size="13" font-weight="700">🕷️ DATA COLLECTION (10 sources × 7 brands = 70 scrape operations)</text>
+
+  <!-- Row 1 of sources -->
+  <rect x="50" y="295" width="155" height="40" rx="6" fill="#fff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="127" y="312" fill="#1e40af" font-size="9" font-weight="600" text-anchor="middle">🎯 Homepage Scraper</text>
+  <text x="127" y="325" fill="#64748b" font-size="8" text-anchor="middle">Cloudscraper → H1/H2/H3</text>
+
+  <rect x="215" y="295" width="155" height="40" rx="6" fill="#fff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="292" y="312" fill="#1e40af" font-size="9" font-weight="600" text-anchor="middle">💰 Pricing Engine</text>
+  <text x="292" y="325" fill="#64748b" font-size="8" text-anchor="middle">Shopify API → HTML Fallback</text>
+
+  <rect x="380" y="295" width="155" height="40" rx="6" fill="#fff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="457" y="312" fill="#1e40af" font-size="9" font-weight="600" text-anchor="middle">📰 News Scanner</text>
+  <text x="457" y="325" fill="#64748b" font-size="8" text-anchor="middle">Google News RSS Feed</text>
+
+  <rect x="545" y="295" width="155" height="40" rx="6" fill="#fff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="622" y="312" fill="#1e40af" font-size="9" font-weight="600" text-anchor="middle">🏅 Partnership Detector</text>
+  <text x="622" y="325" fill="#64748b" font-size="8" text-anchor="middle">Filtered News Queries</text>
+
+  <rect x="710" y="295" width="150" height="40" rx="6" fill="#fff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="785" y="312" fill="#1e40af" font-size="9" font-weight="600" text-anchor="middle">⭐ Trustpilot</text>
+  <text x="785" y="325" fill="#64748b" font-size="8" text-anchor="middle">Score + Review Snippets</text>
+
+  <!-- Row 2 of sources -->
+  <rect x="50" y="345" width="155" height="40" rx="6" fill="#fff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="127" y="362" fill="#1e40af" font-size="9" font-weight="600" text-anchor="middle">🗣️ Reddit Monitor</text>
+  <text x="127" y="375" fill="#64748b" font-size="8" text-anchor="middle">JSON API → Top Comments</text>
+
+  <rect x="215" y="345" width="155" height="40" rx="6" fill="#fff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="292" y="362" fill="#1e40af" font-size="9" font-weight="600" text-anchor="middle">🛒 Amazon Intel</text>
+  <text x="292" y="375" fill="#64748b" font-size="8" text-anchor="middle">Listings + Prices + Reviews</text>
+
+  <rect x="380" y="345" width="155" height="40" rx="6" fill="#fff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="457" y="362" fill="#1e40af" font-size="9" font-weight="600" text-anchor="middle">🔬 Clinical Trials</text>
+  <text x="457" y="375" fill="#64748b" font-size="8" text-anchor="middle">ClinicalTrials.gov API</text>
+
+  <rect x="545" y="345" width="155" height="40" rx="6" fill="#fff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="622" y="362" fill="#1e40af" font-size="9" font-weight="600" text-anchor="middle">⚠️ FDA Watch</text>
+  <text x="622" y="375" fill="#64748b" font-size="8" text-anchor="middle">openFDA Enforcement API</text>
+
+  <rect x="710" y="345" width="150" height="40" rx="6" fill="#fff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="785" y="362" fill="#1e40af" font-size="9" font-weight="600" text-anchor="middle">📱 Social Scanner</text>
+  <text x="785" y="375" fill="#64748b" font-size="8" text-anchor="middle">IG / TikTok / YT / X / Strava</text>
+
+  <!-- Key insight -->
+  <text x="450" y="420" fill="#1e40af" font-size="10" font-weight="600" text-anchor="middle" font-style="italic">All sources free — zero API keys required (except OpenAI for newsletter)</text>
+  <text x="450" y="458" fill="#64748b" font-size="10" text-anchor="middle">▼ Raw scraped data feeds two parallel paths ▼</text>
+
+  <!-- Arrow 3 - splits -->
+  <line x1="300" y1="468" x2="300" y2="500" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="600" y1="468" x2="600" y2="500" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- STEP 4A: Score Calculator -->
+  <rect x="50" y="505" width="420" height="175" rx="12" fill="url(#amberGrad)" stroke="#f59e0b" stroke-width="1" filter="url(#shadow)"/>
+  <text x="70" y="530" fill="#92400e" font-size="13" font-weight="700">📊 DYNAMIC SCORE CALCULATOR</text>
+  <text x="70" y="548" fill="#78350f" font-size="10">Converts raw data → numerical scores (1-10) per brand</text>
+
+  <rect x="70" y="560" width="175" height="32" rx="5" fill="#fff" stroke="#f59e0b" stroke-width="1"/>
+  <text x="157" y="580" fill="#92400e" font-size="9" font-weight="600" text-anchor="middle">🔥 Brand Momentum</text>
+
+  <rect x="255" y="560" width="195" height="32" rx="5" fill="#fff" stroke="#f59e0b" stroke-width="1"/>
+  <text x="352" y="580" fill="#92400e" font-size="9" font-weight="600" text-anchor="middle">💰 Price Competitiveness</text>
+
+  <rect x="70" y="600" width="175" height="32" rx="5" fill="#fff" stroke="#f59e0b" stroke-width="1"/>
+  <text x="157" y="620" fill="#92400e" font-size="9" font-weight="600" text-anchor="middle">🔬 Science Credibility</text>
+
+  <rect x="255" y="600" width="195" height="32" rx="5" fill="#fff" stroke="#f59e0b" stroke-width="1"/>
+  <text x="352" y="620" fill="#92400e" font-size="9" font-weight="600" text-anchor="middle">🛒 Distribution Reach</text>
+
+  <rect x="70" y="640" width="380" height="32" rx="5" fill="#fff" stroke="#f59e0b" stroke-width="1"/>
+  <text x="260" y="660" fill="#92400e" font-size="9" font-weight="600" text-anchor="middle">😊 Customer Satisfaction (Trustpilot + Reddit Sentiment)</text>
+
+  <!-- STEP 4B: AI Analysis -->
+  <rect x="500" y="505" width="370" height="175" rx="12" fill="url(#redGrad)" stroke="#f43f5e" stroke-width="1" filter="url(#shadow)"/>
+  <text x="520" y="530" fill="#9f1239" font-size="13" font-weight="700">🤖 AI ANALYSIS (GPT-4o)</text>
+  <text x="520" y="548" fill="#881337" font-size="10">Raw intel → 1,500+ word executive newsletter</text>
+
+  <rect x="520" y="562" width="165" height="24" rx="4" fill="#fff" stroke="#f43f5e" stroke-width="1"/>
+  <text x="602" y="578" fill="#9f1239" font-size="8" font-weight="600" text-anchor="middle">🚨 Top Threat</text>
+
+  <rect x="695" y="562" width="155" height="24" rx="4" fill="#fff" stroke="#f43f5e" stroke-width="1"/>
+  <text x="772" y="578" fill="#9f1239" font-size="8" font-weight="600" text-anchor="middle">💰 Pricing Analysis</text>
+
+  <rect x="520" y="592" width="165" height="24" rx="4" fill="#fff" stroke="#f43f5e" stroke-width="1"/>
+  <text x="602" y="608" fill="#9f1239" font-size="8" font-weight="600" text-anchor="middle">📰 News &amp; Athletes</text>
+
+  <rect x="695" y="592" width="155" height="24" rx="4" fill="#fff" stroke="#f43f5e" stroke-width="1"/>
+  <text x="772" y="608" fill="#9f1239" font-size="8" font-weight="600" text-anchor="middle">🔬 Science &amp; FDA</text>
+
+  <rect x="520" y="622" width="165" height="24" rx="4" fill="#fff" stroke="#f43f5e" stroke-width="1"/>
+  <text x="602" y="638" fill="#9f1239" font-size="8" font-weight="600" text-anchor="middle">🛒 Distribution Intel</text>
+
+  <rect x="695" y="622" width="155" height="24" rx="4" fill="#fff" stroke="#f43f5e" stroke-width="1"/>
+  <text x="772" y="638" fill="#9f1239" font-size="8" font-weight="600" text-anchor="middle">😊 Customer Sentiment</text>
+
+  <rect x="520" y="652" width="330" height="24" rx="4" fill="#fff" stroke="#f43f5e" stroke-width="1"/>
+  <text x="685" y="668" fill="#9f1239" font-size="8" font-weight="600" text-anchor="middle">⚡ Weekly Action Items (with owners + timelines)</text>
+
+  <!-- Arrows to visualization -->
+  <line x1="260" y1="680" x2="260" y2="720" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="685" y1="680" x2="685" y2="720" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- STEP 5A: Visualization -->
+  <rect x="50" y="725" width="420" height="115" rx="12" fill="url(#purpleGrad)" stroke="#8b5cf6" stroke-width="1" filter="url(#shadow)"/>
+  <text x="70" y="750" fill="#5b21b6" font-size="13" font-weight="700">📈 VISUALIZATIONS (Plotly)</text>
+
+  <rect x="70" y="765" width="120" height="60" rx="6" fill="#fff" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="130" y="790" fill="#5b21b6" font-size="9" font-weight="600" text-anchor="middle">Radar Chart</text>
+  <text x="130" y="805" fill="#64748b" font-size="8" text-anchor="middle">All brands overlaid</text>
+
+  <rect x="200" y="765" width="120" height="60" rx="6" fill="#fff" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="260" y="790" fill="#5b21b6" font-size="9" font-weight="600" text-anchor="middle">Bubble Chart</text>
+  <text x="260" y="805" fill="#64748b" font-size="8" text-anchor="middle">Science vs Distrib.</text>
+
+  <rect x="330" y="765" width="120" height="60" rx="6" fill="#fff" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="390" y="790" fill="#5b21b6" font-size="9" font-weight="600" text-anchor="middle">Logo Cards</text>
+  <text x="390" y="805" fill="#64748b" font-size="8" text-anchor="middle">Bar score breakdown</text>
+
+  <!-- STEP 5B: Newsletter -->
+  <rect x="500" y="725" width="370" height="115" rx="12" fill="url(#redGrad)" stroke="#f43f5e" stroke-width="1" filter="url(#shadow)"/>
+  <text x="520" y="750" fill="#9f1239" font-size="13" font-weight="700">📧 FORMATTED NEWSLETTER</text>
+  <text x="520" y="770" fill="#881337" font-size="10">Markdown → Styled HTML conversion</text>
+  <text x="520" y="790" fill="#881337" font-size="10">Headers, tables, bullets, typography</text>
+  <text x="520" y="810" fill="#881337" font-size="10">Embedded radar chart PNG (via Kaleido)</text>
+  <text x="520" y="830" fill="#881337" font-size="10">Dark branded header + footer</text>
+
+  <!-- Arrows to delivery -->
+  <line x1="260" y1="840" x2="260" y2="870" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="685" y1="840" x2="685" y2="870" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- STEP 6: Delivery -->
+  <rect x="30" y="875" width="840" height="100" rx="12" fill="url(#greenGrad)" stroke="#34d399" stroke-width="1" filter="url(#shadow)"/>
+  <text x="450" y="900" fill="#065f46" font-size="13" font-weight="700" text-anchor="middle">📬 DELIVERY</text>
+
+  <rect x="60" y="915" width="230" height="45" rx="8" fill="#fff" stroke="#34d399" stroke-width="1"/>
+  <text x="175" y="935" fill="#065f46" font-size="10" font-weight="700" text-anchor="middle">🖥️ Streamlit Dashboard</text>
+  <text x="175" y="950" fill="#64748b" font-size="8" text-anchor="middle">Interactive charts + full report</text>
+
+  <rect x="320" y="915" width="260" height="45" rx="8" fill="#fff" stroke="#34d399" stroke-width="1"/>
+  <text x="450" y="935" fill="#065f46" font-size="10" font-weight="700" text-anchor="middle">📬 Gmail → Founder's Inbox</text>
+  <text x="450" y="950" fill="#64748b" font-size="8" text-anchor="middle">Styled HTML + embedded chart image</text>
+
+  <rect x="610" y="915" width="230" height="45" rx="8" fill="#fff" stroke="#34d399" stroke-width="1"/>
+  <text x="725" y="935" fill="#065f46" font-size="10" font-weight="700" text-anchor="middle">💾 JSON Archive</text>
+  <text x="725" y="950" fill="#64748b" font-size="8" text-anchor="middle">data/last_scan.json backup</text>
+
+  <!-- Footer -->
+  <text x="450" y="1010" fill="#94a3b8" font-size="10" text-anchor="middle">Built by Dim · March 2026 · github.com/QuantumApes/aonic-intel</text>
+
+  <!-- Tech stack bar -->
+  <rect x="100" y="1030" width="700" height="28" rx="14" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="450" y="1048" fill="#64748b" font-size="9" text-anchor="middle">Streamlit · Cloudscraper · BeautifulSoup · OpenAI GPT-4o · Plotly · Gmail SMTP · Reddit API · ClinicalTrials.gov · openFDA</text>
+</svg>
